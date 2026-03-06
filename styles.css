@@ -1,175 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Female π</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ulrike Hanz</title>
 
-<!-- Inter Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-body{
-    font-family:'Inter', sans-serif;
-    margin:0;
-    background:#faf7f9;
-    color:#333;
-}
-
-/* main container */
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:60px 40px;
-}
-
-/* title */
-
-h1{
-    font-size:3rem;
-    font-weight:700;
-    color:#b05a7a;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    font-size:1.2rem;
-    color:#7a5d67;
-    margin-bottom:50px;
-}
-
-/* sections */
-
-section{
-    margin-bottom:45px;
-}
-
-h2{
-    font-size:1.4rem;
-    color:#c06c8f;
-    border-left:4px solid #e7a7be;
-    padding-left:12px;
-    margin-bottom:12px;
-}
-
-/* text */
-
-p{
-    line-height:1.7;
-    margin:0;
-}
-
-/* quote */
-
-.quote{
-    background:#fff;
-    border-left:4px solid #e7a7be;
-    padding:18px 20px;
-    margin-top:15px;
-    font-style:italic;
-}
-
-/* divider */
-
-.divider{
-    height:1px;
-    background:#e9d6dd;
-    margin:40px 0;
-}
-
-/* footer */
-
-footer{
-    margin-top:60px;
-    font-size:0.9rem;
-    color:#777;
-}
-
-</style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 
 <body>
 
-<div class="container">
+<header class="header">
+  <div class="header-inner">
+    <div class="brand">Ulrike Hanz</div>
+    <nav class="nav">
+      <a class="active" href="index.html">Main</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="expedition.html">Expeditions</a>
+      <a href="publications.html">Publications</a>
+      <a href="research-interest.html">Research Interest</a>
+      <a href="science-designs.html">Science Designs</a>
+    </nav>
+  </div>
+</header>
 
-<h1>Female π</h1>
-<div class="subtitle">
-A perspective on representation, curiosity, and the beauty of mathematics.
-</div>
+<main class="main">
+  <div class="card profile-card">
 
+    <div class="profile">
+      <img class="hero" src="images/1709807516273.jpg" alt="Ulrike Hanz">
+      <div class="intro">
+        <h1>Ulrike Hanz</h1>
+        <p class="tagline">Oceanographer & Postdoctoral Researcher<br>Alfred Wegener Institute</p>
+        <p>
+          My research focuses on ocean biogeochemistry, benthic ecosystems, and sponge-driven nutrient cycling in deep-sea environments.
+        </p>
 
-<section>
+        <div class="contact">
+          <a href="mailto:Ulrike.hanz@awi.de">Email</a>
+          <a href="https://orcid.org/0000-0003-0379-1832">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=YGrqtJMAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Ulrike-Hanz">ResearchGate</a>
+        </div>
 
-<h2>Introduction</h2>
+      </div>
+    </div>
 
-<p>
-Mathematics has long been described as a universal language — precise,
-elegant, and independent of culture or identity. Yet the people who
-contribute to this language have historically not been represented
-equally.
-</p>
-
-</section>
-
-
-<section>
-
-<h2>The Symbol π</h2>
-
-<p>
-The constant π represents the ratio between the circumference and the
-diameter of a circle. Its infinite decimal expansion has fascinated
-mathematicians for centuries and remains one of the most recognizable
-symbols in science.
-</p>
-
-</section>
-
-
-<section>
-
-<h2>Representation in Science</h2>
-
-<p>
-Increasing diversity in mathematical communities expands the questions
-being asked and the perspectives through which problems are approached.
-Encouraging participation across genders helps strengthen scientific
-progress and enrich academic discourse.
-</p>
-
-<div class="quote">
-“Science thrives when curiosity is shared widely and opportunity is
-distributed fairly.”
-</div>
-
-</section>
-
-
-<div class="divider"></div>
-
-
-<section>
-
-<h2>Conclusion</h2>
-
-<p>
-The idea of “Female π” symbolizes not a different mathematics, but a
-broader mathematical community. Expanding participation allows more
-voices to contribute to the ongoing exploration of patterns,
-structures, and the beauty of numbers.
-</p>
-
-</section>
-
-
-<footer>
-Academic Layout Demo • Inter Typeface • Soft Pink Research Theme
-</footer>
-
-
-</div>
+  </div>
+</main>
 
 </body>
 </html>
