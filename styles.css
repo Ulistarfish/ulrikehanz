@@ -1,37 +1,60 @@
 /* styles.css */
 
+/* --- Color palette --- */
+
 :root {
-  --bg: #dff5df;
-  --text: #0f2a0f;
-  --card: rgba(251,231,239,1);
-  --border: rgba(15,42,15,0.15);
+
+  /* background */
+  --bg: #faf7f9;
+
+  /* main text */
+  --text: #2b2b2b;
+
+  /* header background */
+  --header: #f3dfe7;
+
+  /* card background */
+  --card: #f7e8ee;
+
+  /* navigation hover */
+  --hover: #edd1dc;
+
+  /* borders */
+  --border: rgba(0,0,0,0.08);
 
   --page-width: 1100px;
 }
 
-* { box-sizing: border-box; }
+
+/* --- Global --- */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
   background: var(--bg);
   color: var(--text);
+  line-height: 1.6;
 }
 
-/* Top bar */
+
+/* --- Header --- */
+
 .header {
   position: sticky;
   top: 0;
-  background: rgba(251,231,239,1);
-  backdrop-filter: blur(6px);
+  background: var(--header);
   border-bottom: 1px solid var(--border);
   padding: 18px 24px;
 }
 
-/* header layout */
 .header-inner {
   max-width: var(--page-width);
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,12 +63,13 @@ body {
 
 .brand {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 36px;
   letter-spacing: 0.4px;
-  text-transform: uppercase;
 }
 
-/* Navigation */
+
+/* --- Navigation --- */
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -56,46 +80,93 @@ body {
 .nav a {
   text-decoration: none;
   color: var(--text);
-  padding: 7px 10px;
+
+  padding: 7px 12px;
+
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: rgba(251,231,239,1);
-  display: inline-block;
-  line-height: 1.1;
+
+  background: var(--card);
+
+  font-size: 14px;
 }
 
 .nav a:hover {
-  background: rgba(239,207,227,1);
+  background: var(--hover);
 }
 
 .nav a.active {
-  background: rgba(239,207,227,1);
+  background: var(--hover);
+  font-weight: 500;
 }
 
-/* Page content */
+
+/* --- Main page layout --- */
+
 .main {
   max-width: var(--page-width);
-  margin: 28px auto;
+  margin: 40px auto;
   padding: 0 24px 40px;
 }
+
+
+/* --- Content card --- */
 
 .card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 18px;
+
+  padding: 30px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
 
+
+/* --- Profile image --- */
+
 img.hero {
-  width: 300px;
+  width: 260px;
   max-width: 100%;
+
   display: block;
-  margin: 0 auto 16px;
+  margin: 0 auto 20px;
+
+  border-radius: 14px;
 }
+
+
+/* --- Images --- */
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   border: 1px solid var(--border);
+}
+
+
+/* --- Typography --- */
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 1.2em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+
+/* --- Links --- */
+
+a {
+  color: #7c4a5c;
+}
+
+a:hover {
+  text-decoration: underline;
 }
