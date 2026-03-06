@@ -3,10 +3,10 @@
 :root {
   --bg: #dff5df;
   --text: #0f2a0f;
-  --card: rgba((251, 231, 239, 1);
+  --card: rgba(251,231,239,1);
   --border: rgba(15,42,15,0.15);
 
-  --page-width: 1100px; /* ✅ wider layout */
+  --page-width: 1100px;
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +18,6 @@ body {
   color: var(--text);
 }
 
-
 /* Top bar */
 .header {
   position: sticky;
@@ -28,9 +27,10 @@ body {
   border-bottom: 1px solid var(--border);
   padding: 18px 24px;
 }
-<! -- 251,231,239,1 -->
+
+/* header layout */
 .header-inner {
-  max-width: var(--page-width);   /* ✅ was 1100px */
+  max-width: var(--page-width);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ body {
   font-weight: 700;
   font-size: 38px;
   letter-spacing: 0.4px;
-  text-transform: uppercase; /* keeps the exact style like you wrote */
+  text-transform: uppercase;
 }
 
 /* Navigation */
@@ -54,32 +54,27 @@ body {
 }
 
 .nav a {
-  text-decoration: none !important;   /* ✅ remove underline */
+  text-decoration: none;
   color: var(--text);
   padding: 7px 10px;
-
-  /* ✅ always show the “nice box” */
   border-radius: 10px;
   border: 1px solid var(--border);
   background: rgba(251,231,239,1);
-
   display: inline-block;
   line-height: 1.1;
 }
 
 .nav a:hover {
   background: rgba(239,207,227,1);
-  border-color: var(--border);
 }
 
 .nav a.active {
   background: rgba(239,207,227,1);
-  border-color: var(--border);
 }
 
 /* Page content */
 .main {
-  max-width: var(--page-width);   /* ✅ was 1100px */
+  max-width: var(--page-width);
   margin: 28px auto;
   padding: 0 24px 40px;
 }
@@ -92,10 +87,10 @@ body {
 }
 
 img.hero {
-  width: 300px;      /* change this number */
-  max-width: 100%;   /* keeps it responsive */
+  width: 300px;
+  max-width: 100%;
   display: block;
-  margin: 0 auto 16px;  /* centers it + space below */
+  margin: 0 auto 16px;
 }
 
 img {
