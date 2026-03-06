@@ -1,59 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ulrike Hanz</title>
+/* --- Root Variables --- */
+:root {
+  --bg: #faf7f9;           /* page background */
+  --text: #2b2b2b;         /* main text */
+  --header: #f3dfe7;       /* header background */
+  --card: #f7e8ee;         /* card background */
+  --hover: #edd1dc;        /* nav hover */
+  --border: rgba(0,0,0,0.08);
+  --accent: #b05a7a;       /* links color */
+  --page-width: 1100px;
+}
 
-  <!-- Inter Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+/* --- Global --- */
+* { box-sizing: border-box; }
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-<body>
+/* --- Header --- */
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--header);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 24px;
+}
 
-<header class="header">
-  <div class="header-inner">
-    <div class="brand">Ulrike Hanz</div>
-    <nav class="nav">
-      <a class="active" href="index.html">Main</a>
-      <a href="experiences.html">Experiences</a>
-      <a href="expedition.html">Expeditions</a>
-      <a href="publications.html">Publications</a>
-      <a href="research-interest.html">Research Interest</a>
-      <a href="science-designs.html">Science Designs</a>
-    </nav>
-  </div>
-</header>
+.header-inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
 
-<main class="main">
-  <div class="card profile-card">
+.brand {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.4px;
+}
 
-    <div class="profile">
-      <img class="hero" src="images/1709807516273.jpg" alt="Ulrike Hanz">
-      <div class="intro">
-        <h1>Ulrike Hanz</h1>
-        <p class="tagline">Oceanographer & Postdoctoral Researcher<br>Alfred Wegener Institute</p>
-        <p>
-          My research focuses on ocean biogeochemistry, benthic ecosystems, and sponge-driven nutrient cycling in deep-sea environments.
-        </p>
+/* --- Navigation --- */
+.nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
-        <div class="contact">
-          <a href="mailto:Ulrike.hanz@awi.de">Email</a>
-          <a href="https://orcid.org/0000-0003-0379-1832">ORCID</a>
-          <a href="https://scholar.google.com/citations?user=YGrqtJMAAAAJ&hl=en">Google Scholar</a>
-          <a href="https://www.researchgate.net/profile/Ulrike-Hanz">ResearchGate</a>
-        </div>
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 7px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  font-size: 14px;
+  display: inline-block;
+}
 
-      </div>
-    </div>
+.nav a:hover,
+.nav a.active {
+  background: var(--hover);
+  font-weight: 500;
+}
 
-  </div>
-</main>
+/* --- Main Content --- */
+.main {
+  max-width: var(--page-width);
+  margin: 40px auto;
+  padding: 0 24px 40px;
+}
 
-</body>
-</html>
+/* --- Card --- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+/* --- Profile Layout --- */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.hero {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+/* --- Text --- */
+.intro h1 {
+  margin-top: 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.tagline {
+  font-weight: 500;
+  color: #7a5d67;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  margin-bottom: 16px;
+}
+
+/* --- Contact Links --- */
+.contact {
+  margin-top: 16px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-right: 16px;
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
