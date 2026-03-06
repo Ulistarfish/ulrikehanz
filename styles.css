@@ -3,7 +3,7 @@
 :root {
   --bg: #dff5df;
   --text: #0f2a0f;
-  --card: rgba(230,187,188,0.6);
+  --card: rgba((251, 231, 239, 1);
   --border: rgba(15,42,15,0.15);
 
   --page-width: 1100px; /* ✅ wider layout */
