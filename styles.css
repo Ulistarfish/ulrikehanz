@@ -1,12 +1,12 @@
 /* --- Root Variables --- */
 :root {
-  --bg: #faf7f9;           /* page background */
+  --bg: #b05a7a;           /* darker background */
   --text: #2b2b2b;         /* main text */
-  --header: #f3e3ea;       /* header background, slightly lighter */
-  --card: #f7e8ee;          /* card background */
-  --hover: #edd1dc;         /* nav hover */
+  --header: #c06c8f;       /* header background */
+  --card: #faf7f9;          /* light pink card background */
+  --hover: #edd1dc;        /* nav hover */
   --border: rgba(0,0,0,0.08);
-  --accent: #b05a7a;       /* links color */
+  --accent: #b05a7a;       /* links / accent color */
   --page-width: 1100px;
 }
 
@@ -44,7 +44,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.4px;
-  color: var(--accent);
+  color: var(--card); /* light pink for brand text */
 }
 
 /* --- Navigation --- */
@@ -56,20 +56,21 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--card);
   padding: 6px 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--header);
   font-size: 14px;
   transition: all 0.2s ease;
 }
 
 .nav a:hover,
 .nav a.active {
-  background: var(--hover);
+  background: var(--card); /* light pink hover */
   font-weight: 500;
   border-color: var(--accent);
+  color: var(--text);
 }
 
 /* --- Main Content --- */
@@ -81,7 +82,7 @@ body {
 
 /* --- Card --- */
 .card {
-  background: var(--card);
+  background: var(--card); /* light pink */
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 24px 30px;
@@ -108,7 +109,7 @@ body {
 .intro h1 {
   margin-top: 0;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent); /* darker pink accent */
   font-size: 28px;
 }
 
@@ -148,7 +149,7 @@ body {
 }
 
 .expedition h2 {
-  color: #c06c8f;
+  color: var(--accent); /* darker pink headers */
   border-left: 4px solid #e7a7be;
   padding-left: 12px;
   margin-bottom: 6px;
@@ -172,6 +173,29 @@ body {
   width: calc(33% - 6px);
   border-radius: 10px;
   border: 1px solid var(--border);
+}
+
+/* --- Experiences / Talks / Posters --- */
+.experience-list {
+  margin-top: 12px;
+}
+
+.experience {
+  margin-bottom: 18px;
+  padding-left: 10px;
+  border-left: 3px solid #e7a7be;
+}
+
+.experience p {
+  margin: 4px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #2b2b2b;
+}
+
+.experience strong {
+  color: var(--accent); /* date in darker pink */
+  font-weight: 600;
 }
 
 /* --- Responsive Fixes --- */
