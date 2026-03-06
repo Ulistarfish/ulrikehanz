@@ -28,7 +28,7 @@ body {
   border-bottom: 1px solid var(--border);
   padding: 18px 24px;
 }
-<! -- 223,245,223,0.85 -->
+<! -- 251,231,239,1 -->
 .header-inner {
   max-width: var(--page-width);   /* ✅ was 1100px */
   margin: 0 auto;
@@ -61,19 +61,19 @@ body {
   /* ✅ always show the “nice box” */
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(251,231,239,1);
 
   display: inline-block;
   line-height: 1.1;
 }
 
 .nav a:hover {
-  background: rgba(255,255,255,0.5);
+  background: rgba(239,207,227,1);
   border-color: var(--border);
 }
 
 .nav a.active {
-  background: rgba(255,255,255,0.7);
+  background: rgba(239,207,227,1);
   border-color: var(--border);
 }
 
