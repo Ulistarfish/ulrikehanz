@@ -2,9 +2,9 @@
 :root {
   --bg: #faf7f9;           /* page background */
   --text: #2b2b2b;         /* main text */
-  --header: #f3dfe7;       /* header background */
-  --card: #f7e8ee;         /* card background */
-  --hover: #edd1dc;        /* nav hover */
+  --header: #f3e3ea;       /* header background, slightly lighter */
+  --card: #f7e8ee;          /* card background */
+  --hover: #edd1dc;         /* nav hover */
   --border: rgba(0,0,0,0.08);
   --accent: #b05a7a;       /* links color */
   --page-width: 1100px;
@@ -27,7 +27,8 @@ body {
   top: 0;
   background: var(--header);
   border-bottom: 1px solid var(--border);
-  padding: 18px 24px;
+  padding: 16px 24px;
+  z-index: 100;
 }
 
 .header-inner {
@@ -41,8 +42,9 @@ body {
 
 .brand {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 0.4px;
+  color: var(--accent);
 }
 
 /* --- Navigation --- */
@@ -54,19 +56,20 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: var(--text);
-  padding: 7px 12px;
+  color: var(--accent);
+  padding: 6px 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: var(--card);
+  background: #fff;
   font-size: 14px;
-  display: inline-block;
+  transition: all 0.2s ease;
 }
 
 .nav a:hover,
 .nav a.active {
   background: var(--hover);
   font-weight: 500;
+  border-color: var(--accent);
 }
 
 /* --- Main Content --- */
@@ -81,7 +84,7 @@ body {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 30px;
+  padding: 24px 30px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
 
@@ -94,10 +97,11 @@ body {
 }
 
 .hero {
-  width: 260px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 260px;
   border-radius: 14px;
   border: 1px solid var(--border);
+  object-fit: cover;
 }
 
 /* --- Text --- */
@@ -105,6 +109,7 @@ body {
   margin-top: 0;
   font-weight: 700;
   color: var(--accent);
+  font-size: 28px;
 }
 
 .tagline {
@@ -115,21 +120,72 @@ body {
 
 .intro p {
   margin-bottom: 16px;
+  font-size: 15px;
 }
 
 /* --- Contact Links --- */
 .contact {
   margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .contact a {
-  display: inline-block;
-  margin-right: 16px;
   color: var(--accent);
   font-weight: 500;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+/* --- Expeditions --- */
+.expedition {
+  margin-bottom: 25px;
+}
+
+.expedition h2 {
+  color: #c06c8f;
+  border-left: 4px solid #e7a7be;
+  padding-left: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.expedition p {
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.expedition-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.expedition-images img {
+  width: calc(33% - 6px);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* --- Responsive Fixes --- */
+@media (max-width: 700px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    max-width: 100%;
+  }
+
+  .expedition-images img {
+    width: 100%;
+  }
 }
