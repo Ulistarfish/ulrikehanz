@@ -1,172 +1,175 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Female π</title>
 
-/* --- Color palette --- */
+<!-- Inter Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-:root {
+<style>
 
-  /* background */
-  --bg: #faf7f9;
-
-  /* main text */
-  --text: #2b2b2b;
-
-  /* header background */
-  --header: #f3dfe7;
-
-  /* card background */
-  --card: #f7e8ee;
-
-  /* navigation hover */
-  --hover: #edd1dc;
-
-  /* borders */
-  --border: rgba(0,0,0,0.08);
-
-  --page-width: 1100px;
+body{
+    font-family:'Inter', sans-serif;
+    margin:0;
+    background:#faf7f9;
+    color:#333;
 }
 
+/* main container */
 
-/* --- Global --- */
-
-* {
-  box-sizing: border-box;
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:60px 40px;
 }
 
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+/* title */
+
+h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#b05a7a;
+    margin-bottom:10px;
 }
 
-
-/* --- Header --- */
-
-.header {
-  position: sticky;
-  top: 0;
-  background: var(--header);
-  border-bottom: 1px solid var(--border);
-  padding: 18px 24px;
+.subtitle{
+    font-size:1.2rem;
+    color:#7a5d67;
+    margin-bottom:50px;
 }
 
-.header-inner {
-  max-width: var(--page-width);
-  margin: 0 auto;
+/* sections */
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+section{
+    margin-bottom:45px;
 }
 
-.brand {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.4px;
+h2{
+    font-size:1.4rem;
+    color:#c06c8f;
+    border-left:4px solid #e7a7be;
+    padding-left:12px;
+    margin-bottom:12px;
 }
 
+/* text */
 
-/* --- Navigation --- */
-
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
+p{
+    line-height:1.7;
+    margin:0;
 }
 
-.nav a {
-  text-decoration: none;
-  color: var(--text);
+/* quote */
 
-  padding: 7px 12px;
-
-  border-radius: 10px;
-  border: 1px solid var(--border);
-
-  background: var(--card);
-
-  font-size: 14px;
+.quote{
+    background:#fff;
+    border-left:4px solid #e7a7be;
+    padding:18px 20px;
+    margin-top:15px;
+    font-style:italic;
 }
 
-.nav a:hover {
-  background: var(--hover);
+/* divider */
+
+.divider{
+    height:1px;
+    background:#e9d6dd;
+    margin:40px 0;
 }
 
-.nav a.active {
-  background: var(--hover);
-  font-weight: 500;
+/* footer */
+
+footer{
+    margin-top:60px;
+    font-size:0.9rem;
+    color:#777;
 }
 
-
-/* --- Main page layout --- */
-
-.main {
-  max-width: var(--page-width);
-  margin: 40px auto;
-  padding: 0 24px 40px;
-}
+</style>
+</head>
 
 
-/* --- Content card --- */
+<body>
 
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
+<div class="container">
 
-  padding: 30px;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-}
+<h1>Female π</h1>
+<div class="subtitle">
+A perspective on representation, curiosity, and the beauty of mathematics.
+</div>
 
 
-/* --- Profile image --- */
+<section>
 
-img.hero {
-  width: 260px;
-  max-width: 100%;
+<h2>Introduction</h2>
 
-  display: block;
-  margin: 0 auto 20px;
+<p>
+Mathematics has long been described as a universal language — precise,
+elegant, and independent of culture or identity. Yet the people who
+contribute to this language have historically not been represented
+equally.
+</p>
 
-  border-radius: 14px;
-}
-
-
-/* --- Images --- */
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
+</section>
 
 
-/* --- Typography --- */
+<section>
 
-h1 {
-  margin-top: 0;
-}
+<h2>The Symbol π</h2>
 
-h2 {
-  margin-top: 1.2em;
-}
+<p>
+The constant π represents the ratio between the circumference and the
+diameter of a circle. Its infinite decimal expansion has fascinated
+mathematicians for centuries and remains one of the most recognizable
+symbols in science.
+</p>
 
-p {
-  margin-bottom: 1em;
-}
+</section>
 
 
-/* --- Links --- */
+<section>
 
-a {
-  color: #7c4a5c;
-}
+<h2>Representation in Science</h2>
 
-a:hover {
-  text-decoration: underline;
-}
+<p>
+Increasing diversity in mathematical communities expands the questions
+being asked and the perspectives through which problems are approached.
+Encouraging participation across genders helps strengthen scientific
+progress and enrich academic discourse.
+</p>
+
+<div class="quote">
+“Science thrives when curiosity is shared widely and opportunity is
+distributed fairly.”
+</div>
+
+</section>
+
+
+<div class="divider"></div>
+
+
+<section>
+
+<h2>Conclusion</h2>
+
+<p>
+The idea of “Female π” symbolizes not a different mathematics, but a
+broader mathematical community. Expanding participation allows more
+voices to contribute to the ongoing exploration of patterns,
+structures, and the beauty of numbers.
+</p>
+
+</section>
+
+
+<footer>
+Academic Layout Demo • Inter Typeface • Soft Pink Research Theme
+</footer>
+
+
+</div>
+
+</body>
+</html>
