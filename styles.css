@@ -6,7 +6,7 @@
   --card: rgba(255,255,255,0.6);
   --border: rgba(15,42,15,0.15);
 
-  --page-width: 1400px; /* ✅ wider layout */
+  --page-width: 1100px; /* ✅ wider layout */
 }
 
 * { box-sizing: border-box; }
