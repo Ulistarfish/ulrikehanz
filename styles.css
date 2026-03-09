@@ -213,3 +213,15 @@ body {
     width: 100%;
   }
 }
+.expedition-gallery {
+  display: flex;        /* align images in a row */
+  gap: 12px;            /* space between images */
+  margin-top: 10px;     /* space above the gallery */
+  flex-wrap: wrap;      /* wrap to next line if too many images */
+}
+
+.expedition-gallery img {
+  width: 30%;           /* each image takes 30% of the container width */
+  border-radius: 6px;   /* rounded corners for a nicer look */
+  object-fit: cover;    /* keeps images nicely cropped */
+}
