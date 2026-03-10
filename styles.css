@@ -222,7 +222,7 @@ body {
 
 .expedition-gallery img {
   width: 200px;
-  height: 180px;   /* slightly taller */
+  height: 190px;   /* slightly taller */
   border-radius: 6px;
   object-fit: cover;
   flex-shrink: 0;
