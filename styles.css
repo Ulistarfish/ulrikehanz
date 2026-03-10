@@ -227,3 +227,6 @@ body {
   object-fit: cover;    /* fill the box, crop excess */
   flex-shrink: 0;       /* prevents shrinking in flex row */
 }
+<div class="research-image">
+  <img src="images/Graphicalabstract.jpg" alt="Graphical abstract">
+</div>
