@@ -227,6 +227,17 @@ body {
   object-fit: cover;    /* fill the box, crop excess */
   flex-shrink: 0;       /* prevents shrinking in flex row */
 }
-<div class="research-image">
-  <img src="images/Graphicalabstract.jpg" alt="Graphical abstract">
-</div>
+/* --- Research Image --- */
+.research-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.research-image img {
+  max-width: 600px;   /* controls size */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
