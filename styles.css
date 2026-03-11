@@ -258,3 +258,6 @@ body {
   transform: scale(1.4);
   z-index: 10;
 }
+.expedition-gallery {
+  overflow: visible;
+}
