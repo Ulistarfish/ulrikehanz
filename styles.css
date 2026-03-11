@@ -249,3 +249,12 @@ body {
 .card a:hover {
   text-decoration: underline;
 }
+/* --- Image Hover Zoom --- */
+.expedition-gallery img {
+  transition: transform 0.25s ease;
+}
+
+.expedition-gallery img:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
